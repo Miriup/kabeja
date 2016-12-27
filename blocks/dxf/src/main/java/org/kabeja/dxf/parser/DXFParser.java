@@ -160,7 +160,9 @@ public class DXFParser implements DXFHandlerManager, Parser, DXFHandler {
             throw new ParseException(ioe.toString());
         } finally {
             try {
-                in.close();
+                if (in != null) {
+                    in.close();
+                }
             } catch (IOException ex) {
                 // Nothing to do
             }
