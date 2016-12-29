@@ -8,6 +8,7 @@
     <artifactId>kabeja-dxf</artifactId>
     <name>Kabeja DXF module</name>
     <packaging>jar</packaging>
+    <version>0.5.0-SNAPSHOT-20161228</version>
 
     <parent>
         <groupId>org.kabeja</groupId>
