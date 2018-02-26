@@ -165,7 +165,8 @@ public class DXFHatchHandler extends AbstractEntityHandler {
             parsePolylineBoundary(groupCode, value);
         } else {
             // delegate to the entityhandler
-            this.boundaryHandler.parseGroup(groupCode, value);
+            if (boundaryHandler != null)
+                this.boundaryHandler.parseGroup(groupCode, value);
         }
     }
 
